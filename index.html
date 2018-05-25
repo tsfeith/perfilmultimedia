@@ -30,6 +30,30 @@
 		}
 		
 </style>
+<script type="text/javascript">
+function Init() {
+	alert("Psst... Sou a voz amarela. Tomei controlo desta página e vou só fazer umas perguntas para ver se mereces entrar.");
+	var controlo = 0;
+	while (controlo === 0) {
+		resposta = prompt("Qual deste números é maior: 5, 20, -30, 0?");
+		if (isNaN(resposta) === false) {
+			if (Number(resposta) == 5) {
+				controlo ++;
+			} else {
+				alert("Essa resposta está errada. Por favor tente novamente.");
+			}
+		} else {
+			alert("Insira um número. Nada de letras ou espaços ou carateres mais estranhos...");
+		}
+	}
+	
+	entrar = prompt('Muito bem! Acertaste o primeiro teste! Próxima pergunta, muito difícil! Queres mesmo ver este site?');
+	alert('Hum desculpa, não ouvi o que disseste. Distraí-me com uma borboleta. Mas não interessa, podes entrar, já me fartei...');
+}
+
+Init();
+</script>
+
 
 </head>
 
@@ -92,8 +116,8 @@
 			<td id="FundoBranco">
 				<center><p>Semifinal das Olimpíadas de Física</p></center>
 			</td>
-			<td id="Bronze">
-				<center><p>Bronze</p></center>
+			<td id="Prata">
+				<center><p>Prata</p></center>
 			</td>
 		
 		</tr>
